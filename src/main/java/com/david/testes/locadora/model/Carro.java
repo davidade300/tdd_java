@@ -13,6 +13,9 @@ public class Carro {
     }
 
     public double calcularValorAluguel(int dias) {
+        if (dias >= 5)
+            return (valorDiaria * dias) - 50;
+
         return dias * valorDiaria;
     }
 
